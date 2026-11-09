@@ -114,24 +114,57 @@
   "ventures": "Sponsors & projects",
   "books": "Books & merch",
   "events": "Stages & competitions",
-  "talks": "Keynotes & assemblies"
+  "talks": "Keynotes & assemblies",
+  "brands": "Brands & events Beaver has worked with"
  },
  "bookingAgency": "V Formation Consulting",
  "bookingAgent": "Dr. Charles Drury",
  "bookingPhone": "619.807.3285",
  "bookingEmail": "Vform2717@gmail.com",
  "slug": "beaver-fleming",
- "url": "https://talent.vformationconsulting.com/beaver-fleming/",
- "pdf": "https://talent.vformationconsulting.com/beaver-fleming/beaver-fleming.pdf",
- "photo": "https://talent.vformationconsulting.com/beaver-fleming/photo.jpg",
+ "url": "https://vform2717-web.github.io/vformation-talent/beaver-fleming/",
+ "pdf": "https://vform2717-web.github.io/vformation-talent/beaver-fleming/beaver-fleming.pdf",
+ "photo": "https://vform2717-web.github.io/vformation-talent/beaver-fleming/photo.jpg",
  "photos": [
-  "https://talent.vformationconsulting.com/beaver-fleming/photos/1.jpg",
-  "https://talent.vformationconsulting.com/beaver-fleming/photos/2.jpg",
-  "https://talent.vformationconsulting.com/beaver-fleming/photos/3.jpg",
-  "https://talent.vformationconsulting.com/beaver-fleming/photos/4.jpg",
-  "https://talent.vformationconsulting.com/beaver-fleming/photos/5.jpg"
+  "https://vform2717-web.github.io/vformation-talent/beaver-fleming/photos/1.jpg",
+  "https://vform2717-web.github.io/vformation-talent/beaver-fleming/photos/2.jpg",
+  "https://vform2717-web.github.io/vformation-talent/beaver-fleming/photos/3.jpg",
+  "https://vform2717-web.github.io/vformation-talent/beaver-fleming/photos/4.jpg",
+  "https://vform2717-web.github.io/vformation-talent/beaver-fleming/photos/5.jpg"
  ],
  "showcaseVideos": [],
+ "brands": [
+  {
+   "name": "Nitro Circus"
+  },
+  {
+   "name": "X Games"
+  },
+  {
+   "name": "Reliance Skateboards"
+  },
+  {
+   "name": "PublicSquare"
+  },
+  {
+   "name": "OGIO"
+  },
+  {
+   "name": "Blenders Eyewear"
+  },
+  {
+   "name": "187 Killer Pads"
+  },
+  {
+   "name": "Mendid Clothing"
+  },
+  {
+   "name": "Simple Session"
+  },
+  {
+   "name": "Dew Tour"
+  }
+ ],
  "updatedAt": 1794256714914,
- "base": "https://talent.vformationconsulting.com/"
+ "base": "https://vform2717-web.github.io/vformation-talent/"
 }

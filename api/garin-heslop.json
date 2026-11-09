@@ -116,16 +116,44 @@
   "The Paradyme Shift: The Operating System for Your Life: AI, Accountability and Human Connection, E50 (Jul 2026) | https://podcast.paradymecompanies.com/2323168/episodes/19434105-the-operating-system-for-your-life-ai-accountability-and-human-connection-garin-heslop-e50",
   "GYNERGY press page | https://gynergy.com/press"
  ],
+ "titles": {
+  "brands": "Worked with & featured in"
+ },
  "bookingAgency": "V Formation Consulting",
  "bookingAgent": "Dr. Charles Drury",
  "bookingPhone": "619.807.3285",
  "bookingEmail": "Vform2717@gmail.com",
  "slug": "garin-heslop",
- "url": "https://talent.vformationconsulting.com/garin-heslop/",
- "pdf": "https://talent.vformationconsulting.com/garin-heslop/garin-heslop.pdf",
- "photo": "https://talent.vformationconsulting.com/garin-heslop/photo.jpg",
- "photos": [],
+ "url": "https://vform2717-web.github.io/vformation-talent/garin-heslop/",
+ "pdf": "https://vform2717-web.github.io/vformation-talent/garin-heslop/garin-heslop.pdf",
+ "photo": "https://vform2717-web.github.io/vformation-talent/garin-heslop/photo.jpg",
+ "photos": [
+  "https://vform2717-web.github.io/vformation-talent/garin-heslop/photos/1.jpg",
+  "https://vform2717-web.github.io/vformation-talent/garin-heslop/photos/2.jpg",
+  "https://vform2717-web.github.io/vformation-talent/garin-heslop/photos/3.jpg",
+  "https://vform2717-web.github.io/vformation-talent/garin-heslop/photos/4.jpg",
+  "https://vform2717-web.github.io/vformation-talent/garin-heslop/photos/5.jpg",
+  "https://vform2717-web.github.io/vformation-talent/garin-heslop/photos/6.jpg",
+  "https://vform2717-web.github.io/vformation-talent/garin-heslop/photos/7.jpg"
+ ],
  "showcaseVideos": [],
- "updatedAt": 1793730081300,
- "base": "https://talent.vformationconsulting.com/"
+ "brands": [
+  {
+   "name": "GYNERGY"
+  },
+  {
+   "name": "Medcare Farms"
+  },
+  {
+   "name": "Entrepreneurs' Organization"
+  },
+  {
+   "name": "Forbes"
+  },
+  {
+   "name": "Green Entrepreneur"
+  }
+ ],
+ "updatedAt": 1794262595338,
+ "base": "https://vform2717-web.github.io/vformation-talent/"
 }
