@@ -167,7 +167,8 @@ STYLE = """:root{--ink:#1E0B33;--ink2:#2E1150;--gold:#E3B94C;--gold2:#F4D78A;--p
 *{box-sizing:border-box}body{margin:0;font:16px/1.55 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--paper);color:var(--text)}
 a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
 header{background:linear-gradient(160deg,var(--ink),var(--ink2));color:#fff;padding:56px 0 48px}
-header .eyebrow{color:var(--gold);letter-spacing:.14em;text-transform:uppercase;font-size:12px;font-weight:700;margin:0 0 10px}
+.vlogo{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:#E3B94C}.vlogo .vmark{width:46px;height:34px}.vword{display:flex;flex-direction:column;line-height:1}.vword b{font-family:var(--f-display,Inter,system-ui,sans-serif);font-size:20px;letter-spacing:.12em;color:#fff;font-weight:800}.vword small{font-size:10.5px;letter-spacing:.42em;color:#E3B94C;font-weight:700;margin-top:4px}.vtop{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.vrep{font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--band-muted,#C4B3DA);font-weight:600}
+header .eyebrow{color:var(--gold);letter-spacing:.14em;text-transform:uppercase;font-size:12px;font-weight:700;margin:0 0 18px}
 header h1{font-size:clamp(30px,5vw,48px);line-height:1.1;margin:0 0 12px;letter-spacing:-.02em}header p{max-width:640px;color:#e6dcf5;margin:0}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:20px;padding:36px 0 56px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 24px rgba(30,11,51,.07)}
@@ -187,7 +188,7 @@ index = f"""<!doctype html>
 <title>Talent roster | V Formation Consulting</title>
 <meta name="description" content="Speakers, athletes and leaders represented by V Formation Consulting. Book them for your next event.">
 <link rel="canonical" href="{BASE}"><style>{STYLE}</style></head><body>
-<header><div class="wrap"><p class="eyebrow">V Formation Consulting</p><h1>Book our talent</h1>
+<header><div class="wrap"><p class="eyebrow"><a class="vlogo" href="https://vformationconsulting.com/" target="_blank" rel="noopener" aria-label="V Formation Consulting"><svg class="vmark" viewBox="0 0 30 22" aria-hidden="true"><g fill="currentColor"><circle cx="15" cy="19" r="2.6"/><circle cx="10.2" cy="13.4" r="2.2"/><circle cx="19.8" cy="13.4" r="2.2"/><circle cx="6" cy="8" r="1.9"/><circle cx="24" cy="8" r="1.9"/><circle cx="2.4" cy="3" r="1.6"/><circle cx="27.6" cy="3" r="1.6"/></g></svg><span class="vword"><b>V FORMATION</b><small>CONSULTING</small></span></a></p><h1>Book our talent</h1>
 <p>Speakers, athletes and leaders for keynotes, workshops, assemblies and brand partnerships.</p></div></header>
 <main class="wrap"><div class="grid">{"".join(card(r) for r in roster) or "<p>New profiles are on the way.</p>"}</div></main>
 <footer><div class="wrap">Booking: {f'<a href="mailto:{e(contact)}">{e(contact)}</a> · ' if contact else ""}<a href="https://vformationconsulting.com/">vformationconsulting.com</a> · <a href="embed.html">Add these profiles to your site</a></div></footer>
@@ -208,7 +209,7 @@ embed = f"""<!doctype html>
 pre{{background:var(--ink);color:#f4ecff;padding:14px;border-radius:12px;overflow:auto;font-size:13px;white-space:pre-wrap;word-break:break-all}}
 h2{{margin:34px 0 8px}}table{{border-collapse:collapse;width:100%}}td{{border-bottom:1px solid var(--line);padding:8px 6px;font-size:14px}}.demo{{margin:18px 0 40px}}</style>
 <script src="embed.js" async></script></head><body>
-<header><div class="wrap"><p class="eyebrow">For web teams</p><h1>Add talent profiles to any website</h1>
+<header><div class="wrap"><p class="eyebrow"><a class="vlogo" href="https://vformationconsulting.com/" target="_blank" rel="noopener" aria-label="V Formation Consulting"><svg class="vmark" viewBox="0 0 30 22" aria-hidden="true"><g fill="currentColor"><circle cx="15" cy="19" r="2.6"/><circle cx="10.2" cy="13.4" r="2.2"/><circle cx="19.8" cy="13.4" r="2.2"/><circle cx="6" cy="8" r="1.9"/><circle cx="24" cy="8" r="1.9"/><circle cx="2.4" cy="3" r="1.6"/><circle cx="27.6" cy="3" r="1.6"/></g></svg><span class="vword"><b>V FORMATION</b><small>CONSULTING</small></span></a></p><p class="eyebrow">For web teams</p><h1>Add talent profiles to any website</h1>
 <p>Paste one snippet into an HTML block (WordPress, Elementor, Squarespace, Wix, Webflow). It updates on its own whenever a profile changes.</p></div></header>
 <main class="wrap">
 <h2>The whole roster</h2><pre>{e(snip_roster)}</pre>

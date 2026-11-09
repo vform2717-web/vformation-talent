@@ -213,6 +213,7 @@ button,input,select,textarea{{font:inherit;color:inherit}}
 .wrap{{max-width:820px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}}
 .hero{{background:var(--band);color:var(--band-ink)}}
 .hero .wrap{{padding-block:28px 30px;display:flex;flex-direction:column;gap:18px}}
+.vlogo{{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:#E3B94C}}.vlogo .vmark{{width:46px;height:34px}}.vword{{display:flex;flex-direction:column;line-height:1}}.vword b{{font-family:var(--f-display,Inter,system-ui,sans-serif);font-size:20px;letter-spacing:.12em;color:#fff;font-weight:800}}.vword small{{font-size:10.5px;letter-spacing:.42em;color:#E3B94C;font-weight:700;margin-top:4px}}.vtop{{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}}.vrep{{font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--band-muted,#C4B3DA);font-weight:600}}
 .brandline{{display:flex;align-items:center;gap:8px;font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--band-muted);font-weight:600}}
 .idrow{{display:flex;gap:20px;align-items:center;flex-wrap:wrap}}
 .photo{{width:132px;height:132px;border-radius:14px;object-fit:cover;flex:none;max-width:100%}}
@@ -316,6 +317,11 @@ blockquote{{border-left-color:var(--gold);font-size:1rem}}
 .crow .lab{{color:var(--gold-hi)}}
 .band.dark .crow .sel{{color:var(--band-ink)}}
 .btn.gold{{background:var(--gold-hi);color:#1A1405;border-color:var(--gold-hi)}}
+[hidden]{{display:none!important}}
+.band.dark a.btn.gold,.band.dark .btn.gold{{color:#1A1405}}
+.band.dark a.btn:not(.gold):not(.primary){{color:var(--ink)}}
+.band.dark .form-card .muted,.band.dark .form-card .small{{color:var(--muted)}}
+.band.dark .form-card h3{{color:var(--ink)}}
 .form-card{{border-radius:var(--r);padding:18px;display:flex;flex-direction:column;gap:14px}}
 
 .hero .btn.primary{{background:var(--gold-hi);border-color:var(--gold-hi);color:#241405;font-size:1rem;padding:11px 18px}}
@@ -391,7 +397,7 @@ ol.sources .host{{opacity:.75}}
 </style>
 
 <header class="hero"><div class="wrap">
-  <div class="brandline"><svg width="26" height="19" viewBox="0 0 30 22" aria-hidden="true"><g fill="currentColor"><circle cx="15" cy="19" r="2.6"/><circle cx="10.2" cy="13.4" r="2.2"/><circle cx="19.8" cy="13.4" r="2.2"/><circle cx="6" cy="8" r="1.9"/><circle cx="24" cy="8" r="1.9"/><circle cx="2.4" cy="3" r="1.6"/><circle cx="27.6" cy="3" r="1.6"/></g></svg><span>Represented by {e(agency or "V Formation Consulting")}</span></div>
+  <div class="vtop"><a class="vlogo" href="https://vformationconsulting.com/" target="_blank" rel="noopener" aria-label="V Formation Consulting"><svg class="vmark" viewBox="0 0 30 22" aria-hidden="true"><g fill="currentColor"><circle cx="15" cy="19" r="2.6"/><circle cx="10.2" cy="13.4" r="2.2"/><circle cx="19.8" cy="13.4" r="2.2"/><circle cx="6" cy="8" r="1.9"/><circle cx="24" cy="8" r="1.9"/><circle cx="2.4" cy="3" r="1.6"/><circle cx="27.6" cy="3" r="1.6"/></g></svg><span class="vword"><b>V FORMATION</b><small>CONSULTING</small></span></a><span class="vrep">Represented by {e(agency or "V Formation Consulting")}</span></div>
   <div class="idrow">{photo}<div class="idtext">
     <h1>{e(data["name"])}</h1>
     <p class="headline">{e(data.get("headline"))}</p>
@@ -412,9 +418,9 @@ ol.sources .host{{opacity:.75}}
   <div class="form-card">
     <h3>Send an inquiry</h3><p class="small muted" style="margin-top:-6px">Fill this in and tap the button. Your email app opens with the inquiry addressed to {e(agent or agency)}, ready to send.</p>
     <form id="inq" class="fgrid" novalidate>
-      <label class="f" for="q-name">Your name <span class="star">*</span><input id="q-name" class="in" autocomplete="name"></label>
-      <label class="f" for="q-org">Organization <span class="star">*</span><input id="q-org" class="in" autocomplete="organization"></label>
-      <label class="f" for="q-email">Email <span class="star">*</span><input id="q-email" class="in" type="email" autocomplete="email"></label>
+      <label class="f" for="q-name"><span>Your name <span class="star">*</span></span><input id="q-name" class="in" autocomplete="name"></label>
+      <label class="f" for="q-org"><span>Organization <span class="star">*</span></span><input id="q-org" class="in" autocomplete="organization"></label>
+      <label class="f" for="q-email"><span>Email <span class="star">*</span></span><input id="q-email" class="in" type="email" autocomplete="email"></label>
       <label class="f" for="q-phone">Phone<input id="q-phone" class="in" type="tel" autocomplete="tel"></label>
       <label class="f" for="q-type">Event type<select id="q-type" class="in"><option>Keynote</option><option>Workshop</option><option>Corporate training</option><option>Conference</option><option>Podcast or media</option><option>Other</option></select></label>
       <label class="f" for="q-talk">Talk of interest<select id="q-talk" class="in"><option>Not sure yet</option>{"".join(f"<option>{e(t)}</option>" for t in talk_titles)}</select></label>
