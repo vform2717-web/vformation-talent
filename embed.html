@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Embed talent profiles | V Formation Consulting</title><style>:root{--ink:#1E0B33;--ink2:#2E1150;--gold:#E3B94C;--gold2:#F4D78A;--paper:#FBF8F2;--text:#1d1626;--muted:#5d5470;--card:#fff;--line:#e9e2d4}
+@media (prefers-color-scheme:dark){:root{--paper:#120720;--text:#f3eefb;--muted:#b9aecb;--card:#1c0d30;--line:#33204d}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.55 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--paper);color:var(--text)}
+a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+header{background:linear-gradient(160deg,var(--ink),var(--ink2));color:#fff;padding:56px 0 48px}
+header .eyebrow{color:var(--gold);letter-spacing:.14em;text-transform:uppercase;font-size:12px;font-weight:700;margin:0 0 10px}
+header h1{font-size:clamp(30px,5vw,48px);line-height:1.1;margin:0 0 12px;letter-spacing:-.02em}header p{max-width:640px;color:#e6dcf5;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:20px;padding:36px 0 56px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 24px rgba(30,11,51,.07)}
+.card .img{display:block;aspect-ratio:1/1;background:var(--ink)}.card img{width:100%;height:100%;object-fit:cover;display:block}
+.ph{display:grid;place-items:center;height:100%;color:var(--gold);font-size:64px;font-weight:800}
+.body{padding:18px;display:flex;flex-direction:column;gap:8px;flex:1}.body h2{margin:0;font-size:21px}.body h2 a{text-decoration:none}
+.hd{margin:0;color:var(--muted);font-size:14.5px}.stats{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:4px;font-size:13.5px;color:var(--muted)}
+.stats b{color:var(--text)}.row{display:flex;gap:8px;margin-top:auto;padding-top:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 16px;border-radius:999px;font-weight:700;font-size:14px;text-decoration:none}
+.gold{background:var(--gold);color:var(--ink)}.ghost{border:1.5px solid var(--line)}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:14px}
+pre{background:var(--ink);color:#f4ecff;padding:14px;border-radius:12px;overflow:auto;font-size:13px;white-space:pre-wrap;word-break:break-all}
+h2{margin:34px 0 8px}table{border-collapse:collapse;width:100%}td{border-bottom:1px solid var(--line);padding:8px 6px;font-size:14px}.demo{margin:18px 0 40px}</style>
+<script src="embed.js" async></script></head><body>
+<header><div class="wrap"><p class="eyebrow">For web teams</p><h1>Add talent profiles to any website</h1>
+<p>Paste one snippet into an HTML block (WordPress, Elementor, Squarespace, Wix, Webflow). It updates on its own whenever a profile changes.</p></div></header>
+<main class="wrap">
+<h2>The whole roster</h2><pre>&lt;script src=&quot;https://talent.vformationconsulting.com/embed.js&quot; async&gt;&lt;/script&gt;
+&lt;vformation-talent roster&gt;&lt;/vformation-talent&gt;</pre>
+<h2>One person</h2><pre>&lt;script src=&quot;https://talent.vformationconsulting.com/embed.js&quot; async&gt;&lt;/script&gt;
+&lt;vformation-talent profile=&quot;beaver-fleming&quot;&gt;&lt;/vformation-talent&gt;</pre>
+<h2>Filter by tag</h2><pre>&lt;script src=&quot;https://talent.vformationconsulting.com/embed.js&quot; async&gt;&lt;/script&gt;
+&lt;vformation-talent roster tag=&quot;KeynoteSpeaker&quot; limit=&quot;6&quot;&gt;&lt;/vformation-talent&gt;</pre>
+<h2>Full page in a frame</h2><pre>&lt;iframe src=&quot;https://talent.vformationconsulting.com/beaver-fleming/&quot; style=&quot;width:100%;height:1600px;border:0&quot; title=&quot;Book this speaker&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;</pre>
+<h2>Links to share</h2><p>Every profile also has its own page and a PDF one-sheet. Data is at <a href="api/talent.json">api/talent.json</a>.</p>
+<table><tr><td>Beaver Fleming</td><td><code>beaver-fleming</code></td><td><a href="beaver-fleming/">page</a> · <a href="api/beaver-fleming.json">json</a></td></tr><tr><td>Garin Heslop</td><td><code>garin-heslop</code></td><td><a href="garin-heslop/">page</a> · <a href="api/garin-heslop.json">json</a></td></tr></table>
+<h2>Preview</h2><div class="demo"><vformation-talent roster></vformation-talent></div>
+</main></body></html>
