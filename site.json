@@ -1,6 +1,11 @@
 {
  "domain": "vform2717-web.github.io/vformation-talent",
  "crm": "https://claude.ai/artifact/BxMjsnCdZ3tTFy8udrHwT6",
- "alwaysLive": ["t-garin", "t-beaver"],
+ "alwaysLive": [
+  "t-garin",
+  "t-beaver",
+  "t-austin",
+  "t-zion"
+ ],
  "note": "Profiles go live when their ID card is marked Ready for outreach, or when their talent id is in alwaysLive. Rebuilt daily by a scheduled task."
 }
