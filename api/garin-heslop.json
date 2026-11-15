@@ -139,6 +139,10 @@
  "showcaseVideos": [],
  "brands": [
   {
+   "name": "Forbes",
+   "src": "https://vform2717-web.github.io/vformation-talent/garin-heslop/brands/1.png"
+  },
+  {
    "name": "GYNERGY"
   },
   {
@@ -146,9 +150,6 @@
   },
   {
    "name": "Entrepreneurs' Organization"
-  },
-  {
-   "name": "Forbes"
   },
   {
    "name": "Green Entrepreneur"

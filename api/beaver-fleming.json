@@ -135,19 +135,21 @@
  "showcaseVideos": [],
  "brands": [
   {
-   "name": "Nitro Circus"
+   "name": "X Games",
+   "src": "https://vform2717-web.github.io/vformation-talent/beaver-fleming/brands/1.png"
   },
   {
-   "name": "X Games"
+   "name": "OGIO",
+   "src": "https://vform2717-web.github.io/vformation-talent/beaver-fleming/brands/2.png"
+  },
+  {
+   "name": "Nitro Circus"
   },
   {
    "name": "Reliance Skateboards"
   },
   {
    "name": "PublicSquare"
-  },
-  {
-   "name": "OGIO"
   },
   {
    "name": "Blenders Eyewear"

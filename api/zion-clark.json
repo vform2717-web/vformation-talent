@@ -130,16 +130,19 @@
  "showcaseVideos": [],
  "brands": [
   {
-   "name": "Netflix"
+   "name": "Netflix",
+   "src": "https://vform2717-web.github.io/vformation-talent/zion-clark/brands/1.png"
   },
   {
-   "name": "Guinness World Records"
+   "name": "Guinness World Records",
+   "src": "https://vform2717-web.github.io/vformation-talent/zion-clark/brands/2.png"
+  },
+  {
+   "name": "HBO",
+   "src": "https://vform2717-web.github.io/vformation-talent/zion-clark/brands/3.png"
   },
   {
    "name": "America's Got Talent"
-  },
-  {
-   "name": "HBO"
   },
   {
    "name": "F45"

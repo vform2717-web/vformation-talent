@@ -117,16 +117,23 @@
  "showcaseVideos": [],
  "brands": [
   {
-   "name": "Domino's"
+   "name": "Domino's",
+   "src": "https://vform2717-web.github.io/vformation-talent/austin-hatch/brands/1.png"
   },
   {
-   "name": "Nestlé"
+   "name": "Nestlé",
+   "src": "https://vform2717-web.github.io/vformation-talent/austin-hatch/brands/2.png"
+  },
+  {
+   "name": "MassMutual",
+   "src": "https://vform2717-web.github.io/vformation-talent/austin-hatch/brands/3.png"
+  },
+  {
+   "name": "Farm Bureau Insurance",
+   "src": "https://vform2717-web.github.io/vformation-talent/austin-hatch/brands/4.png"
   },
   {
    "name": "Northwestern Mutual"
-  },
-  {
-   "name": "MassMutual"
   },
   {
    "name": "Bernstein"
@@ -136,9 +143,6 @@
   },
   {
    "name": "FirstService Residential"
-  },
-  {
-   "name": "Farm Bureau Insurance"
   },
   {
    "name": "Purdue Basketball"
