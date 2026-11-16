@@ -5,7 +5,8 @@
   "t-garin",
   "t-beaver",
   "t-austin",
-  "t-zion"
+  "t-zion",
+  "t-mike"
  ],
  "note": "Profiles go live when their ID card is marked Ready for outreach, or when their talent id is in alwaysLive. Rebuilt daily by a scheduled task."
 }
