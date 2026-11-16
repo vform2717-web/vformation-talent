@@ -1,7 +1,7 @@
 {
  "base": "https://vform2717-web.github.io/vformation-talent/",
- "updated": "2026-11-15T13:41:12Z",
- "count": 4,
+ "updated": "2026-11-16T00:50:50Z",
+ "count": 5,
  "talent": [
   {
    "slug": "austin-hatch",
@@ -114,6 +114,43 @@
    "pdf": "https://vform2717-web.github.io/vformation-talent/garin-heslop/garin-heslop.pdf",
    "bookingEmail": "Vform2717@gmail.com",
    "ctaLabel": ""
+  },
+  {
+   "slug": "mike-lemaire",
+   "name": "Mike Lemaire",
+   "type": "speaker",
+   "headline": "“The French Rock”: two-time Muay Thai world champion, GLORY tournament winner and head coach of the Victory MMA fight team, on performance and longevity after 40.",
+   "location": "San Diego, California · Born and raised in Paris, France",
+   "highlights": [
+    "2× | Muay Thai world champion: WBC and WCK titles",
+    "2013 | Road to GLORY tournament winner, earning a GLORY contract",
+    "24–0 | Unbeaten under Muay Thai rules (his record; confirm)",
+    "8–6 | Record in GLORY Kickboxing, the sport's top league",
+    "5,000+ | Clients on his Biological Recode System™",
+    "Since age 4 | Lifelong martial artist: judo, karate, kickboxing, Muay Thai"
+   ],
+   "tags": [
+    "KeynoteSpeaker",
+    "MuayThai",
+    "Kickboxing",
+    "WorldChampion",
+    "GLORY",
+    "Discipline",
+    "Resilience",
+    "Performance",
+    "Longevity",
+    "FitnessCoach",
+    "SelfDefense",
+    "PersonalSafety",
+    "Leadership",
+    "SanDiego",
+    "TheFrenchRock"
+   ],
+   "photo": "https://vform2717-web.github.io/vformation-talent/mike-lemaire/photo.jpg",
+   "url": "https://vform2717-web.github.io/vformation-talent/mike-lemaire/",
+   "pdf": "https://vform2717-web.github.io/vformation-talent/mike-lemaire/mike-lemaire.pdf",
+   "bookingEmail": "Vform2717@gmail.com",
+   "ctaLabel": "Book Mike for your next event"
   },
   {
    "slug": "zion-clark",
