@@ -54,4 +54,6 @@ def inject(html_text, token_css):
     if "vf-theme-css" in html_text:
         return html_text
     k = html_text.rfind("</body>")
-    return html_text[:k] + add + html_text[k:] if k >= 0 else html_text + add
+    if k >= 0 and html_text[k:].replace("</body>", "", 1).replace("</html>", "", 1).strip() == "":
+        return html_text[:k] + add + html_text[k:]
+    return html_text.rstrip() + "\n" + add + "\n"
