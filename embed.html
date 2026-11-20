@@ -34,4 +34,31 @@ h2{margin:34px 0 8px}table{border-collapse:collapse;width:100%}td{border-bottom:
 <h2>Links to share</h2><p>Every profile also has its own page and a PDF one-sheet. Data is at <a href="api/talent.json">api/talent.json</a>.</p>
 <table><tr><td>Austin Hatch</td><td><code>austin-hatch</code></td><td><a href="austin-hatch/">page</a> · <a href="api/austin-hatch.json">json</a></td></tr><tr><td>Beaver Fleming</td><td><code>beaver-fleming</code></td><td><a href="beaver-fleming/">page</a> · <a href="api/beaver-fleming.json">json</a></td></tr><tr><td>Garin Heslop</td><td><code>garin-heslop</code></td><td><a href="garin-heslop/">page</a> · <a href="api/garin-heslop.json">json</a></td></tr><tr><td>Mike Lemaire</td><td><code>mike-lemaire</code></td><td><a href="mike-lemaire/">page</a> · <a href="api/mike-lemaire.json">json</a></td></tr><tr><td>Zion Clark</td><td><code>zion-clark</code></td><td><a href="zion-clark/">page</a> · <a href="api/zion-clark.json">json</a></td></tr></table>
 <h2>Preview</h2><div class="demo"><vformation-talent roster></vformation-talent></div>
-</main></body></html>
+</main><style id="vf-theme-css">
+:root[data-theme="light"]{--paper:#FBF8F2;--text:#1d1626;--muted:#5d5470;--card:#fff;--line:#e9e2d4;color-scheme:light}
+:root[data-theme="medium"]{--paper:#E3DDE9;--text:#211A2C;--muted:#4C4359;--card:#EEE9F2;--line:#CBC1D7;color-scheme:light}
+:root[data-theme="dark"]{--paper:#120720;--text:#f3eefb;--muted:#b9aecb;--card:#1c0d30;--line:#33204d;color-scheme:dark}
+
+.vf-theme{position:fixed;right:max(12px,env(safe-area-inset-right,0px));bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:50;display:flex;gap:2px;padding:3px;border-radius:999px;background:rgba(20,10,32,.88);box-shadow:0 6px 20px rgba(0,0,0,.25);font:600 13px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.vf-theme button{appearance:none;border:0;background:transparent;color:#E9E1F5;min-height:40px;min-width:44px;padding:0 12px;border-radius:999px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;font:inherit}
+.vf-theme button[aria-pressed="true"]{background:#E3B94C;color:#1E0B33}
+.vf-theme button:focus-visible{outline:2px solid #E3B94C;outline-offset:2px}
+.vf-theme svg{width:16px;height:16px;flex:none}
+@media (max-width:420px){.vf-theme .lbl{display:none}.vf-theme button{padding:0 10px}}
+@media print{.vf-theme{display:none}}
+body{padding-bottom:64px}
+</style><script>(function(){
+var K="vf-theme",R=document.documentElement,S={light:'<circle cx="8" cy="8" r="3.2"/><path d="M8 1v1.6M8 13.4V15M1 8h1.6M13.4 8H15M3 3l1.1 1.1M11.9 11.9 13 13M3 13l1.1-1.1M11.9 4.1 13 3"/>',medium:'<circle cx="8" cy="8" r="6.2"/><path d="M8 1.8v12.4A6.2 6.2 0 0 0 8 1.8z" fill="currentColor"/>',dark:'<path d="M13.5 10.2A6 6 0 0 1 5.8 2.5a6 6 0 1 0 7.7 7.7z"/>'};
+function saved(){try{return localStorage.getItem(K)||""}catch(e){return""}}
+function store(t){try{localStorage.setItem(K,t)}catch(e){}}
+var q="";try{q=(new URLSearchParams(location.search).get("theme")||"").toLowerCase()}catch(e){}
+var t=/^(light|medium|dark)$/.test(q)?q:saved();if(t)R.setAttribute("data-theme",t);
+function cur(){return R.getAttribute("data-theme")||(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}
+function paint(){var c=cur();document.querySelectorAll(".vf-theme button").forEach(function(b){b.setAttribute("aria-pressed",b.getAttribute("data-t")===c?"true":"false")})}
+function build(){if(document.querySelector(".vf-theme"))return;var w=document.createElement("div");w.className="vf-theme";w.setAttribute("role","group");w.setAttribute("aria-label","Color theme");
+["light","medium","dark"].forEach(function(k){var b=document.createElement("button");b.type="button";b.setAttribute("data-t",k);b.setAttribute("aria-label",k.charAt(0).toUpperCase()+k.slice(1)+" colors");
+b.innerHTML='<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">'+S[k]+'</svg><span class="lbl">'+k.charAt(0).toUpperCase()+k.slice(1)+'</span>';
+b.addEventListener("click",function(){R.setAttribute("data-theme",k);store(k);paint()});w.appendChild(b)});document.body.appendChild(w);paint()}
+if(window.matchMedia){try{matchMedia("(prefers-color-scheme: dark)").addEventListener("change",paint)}catch(e){}}
+if(document.body)build();else document.addEventListener("DOMContentLoaded",build);
+})();</script></body></html>

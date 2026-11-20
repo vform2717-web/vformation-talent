@@ -10,6 +10,8 @@ import hashlib, html, json, os, re, shutil, subprocess, sys, tempfile, datetime
 from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+import theme
 args = [a for a in sys.argv[1:] if not a.startswith("--")]
 ALL = "--all" in sys.argv
 DOMAIN = "talent.vformationconsulting.com"
@@ -125,6 +127,7 @@ for item in manifest:
              + (f'<meta property="og:image" content="{BASE}{photo_url}">\n' if photo_url else "")
              + f'<title>Book {e(data["name"])} | V Formation Consulting</title>\n')
     page = page.replace("<head>\n", "<head>\n" + extra, 1)
+    page = theme.inject(page, theme.CARD_CSS)
     open(os.path.join(d, "index.html"), "w", encoding="utf-8").write(page)
     subprocess.run(["node", os.path.join(HERE, "mkpdf.js"), os.path.abspath(os.path.join(d, "index.html")), os.path.abspath(os.path.join(d, f"{slug}.pdf"))], check=True, capture_output=True)
 
@@ -194,6 +197,7 @@ index = f"""<!doctype html>
 <footer><div class="wrap">Booking: {f'<a href="mailto:{e(contact)}">{e(contact)}</a> · ' if contact else ""}<a href="https://vformationconsulting.com/">vformationconsulting.com</a> · <a href="embed.html">Add these profiles to your site</a></div></footer>
 </body></html>
 """
+index = theme.inject(index, theme.SITE_CSS)
 open(os.path.join(site, "index.html"), "w", encoding="utf-8").write(index)
 
 # ---------- embed instructions page ----------
@@ -221,5 +225,6 @@ h2{{margin:34px 0 8px}}table{{border-collapse:collapse;width:100%}}td{{border-bo
 <h2>Preview</h2><div class="demo"><vformation-talent roster></vformation-talent></div>
 </main></body></html>
 """
+embed = theme.inject(embed, theme.SITE_CSS)
 open(os.path.join(site, "embed.html"), "w", encoding="utf-8").write(embed)
 print("roster", len(roster), "skipped (not ready):", ", ".join(skipped) or "none")
